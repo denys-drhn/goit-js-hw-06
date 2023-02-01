@@ -27,9 +27,14 @@ ul {
 	list-style: none;
 }
 
+img {
+	max-width: 200px;
+}
+
 .gallery{
 	display: flex;
 	justify-content: left;
 	gap: 30px;
 	align-items: center;
 }
+
