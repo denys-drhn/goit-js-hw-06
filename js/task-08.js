@@ -1,1 +1,19 @@
+const formElement = document.querySelector('form.login-form');
 
+formElement.addEventListener('submit', onFormSubmit);
+	
+	function onFormSubmit(event) {
+		event.preventDefault(); // отмена действие(перезагрузка страници) по умолчанию методом preventDefault()
+		const formElements = event.currentTarget.elements;
+		const mail = formElements.email.value;
+		const password = formElements.password.value;		
+		const formData = {
+			mail, password
+		};
+		console.log(formData); //  Выведи обьект с введенными данными в консоль
+
+		if (mail === "" || password === "") {
+		return alert("Please fill in all the fields!"); // выводи alert
+	}
+		event.currentTarget.reset(); // очисти значения полей формы методом reset.
+};
