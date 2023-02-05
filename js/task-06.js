@@ -7,7 +7,10 @@ textInput.addEventListener("blur", onInputBlur);
 function onInputBlur(event) {
 	
 	if (Number(textInput.dataset.length) === event.currentTarget.value.length) { 
-		textInput.classList.replace("invalid", "valid");
+
+		textInput.classList.remove("invalid");
+		textInput.classList.add("valid");
+		
 	} else {
 		textInput.classList.add("invalid");
 	}
