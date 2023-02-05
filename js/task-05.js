@@ -7,6 +7,6 @@ textInput.addEventListener('input', onInputTyping);
 
 function onInputTyping(event) {
 	if (event.currentTarget.value.trim() !== '') {
-		textOutput.textContent = event.currentTarget.value;
+	textOutput.textContent = event.currentTarget.value;
 	} else textOutput.textContent = 'Anonymous';
 };
