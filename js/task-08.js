@@ -10,10 +10,10 @@ formElement.addEventListener('submit', onFormSubmit);
 		const formData = {
 			mail, password
 		};
-		console.log(formData); //  Выведи обьект с введенными данными в консоль
-
+		
 		if (mail === "" || password === "") {
-		return alert("Please fill in all the fields!"); // выводи alert
-	}
+			return alert("Please fill in all the fields!"); // выводи alert
+		} else { console.log(formData); } //  Выведи обьект с введенными данными в консоль
+
 		event.currentTarget.reset(); // очисти значения полей формы методом reset.
 };
